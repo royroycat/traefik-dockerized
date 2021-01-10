@@ -1,6 +1,5 @@
-config/
+config/*
 !config/traefik.example.yml
-letsencrypt/
+letsencrypt/*
 !letsencrypt/.gitkeep
-docker-compose.override.yml
 
