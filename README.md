@@ -1,3 +1,19 @@
+To use this traefik, an admin user has created:
+
+sudo apt-get install apache2-utils
+ 
+Then generate the password with htpasswd. Substitute secure_password with the password you’d like to use for the Traefik admin user:
+
+htpasswd -nb admin secure_password
+
+The output from the program will look like this:
+
+Output
+admin:$apr1$ruca84Hq$mbjdMZBAG.KWn7vfN/SNK/
+
+You can replace the password hash in docker-compose.override.yml
+
+
 # Traefik Dockerized
 
 - [Traefik Dockerized](#traefik-dockerized)
